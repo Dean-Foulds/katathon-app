@@ -1,13 +1,15 @@
-<h3>Get those thumbs ready, the next Katathon is in ......
-
-<%= Time.now + 30 %>
 
 
-</h3>
+
+
+
+<% dat = Date.today + 3.5 %>
+<h3>Get those thumbs ready, the next Katathon is: <%= dat.strftime('%a %e %M:%S') %></h3>
+<%= render 'layouts/carousel' %>
+
 
 
 <p>
-Hello below is embedded ruby! <br>
 <%= link_to 'Users:', users_path %> <%= User.count %> registered
-
 </p>
+
