@@ -1,11 +1,13 @@
 
 
 
-
-
-<% dat = Date.today + 3.5 %>
-<h3>Get those thumbs ready, the next Katathon is: <%= dat.strftime('%a %e %M:%S') %></h3>
-<%= render 'layouts/carousel' %>
+<div class="container">
+  <div class="row">
+    <% dat = Date.today + 4 %>
+    <h3 class="text-center" >Get those thumbs ready, the next Katathon is: <%= dat.strftime('%a %e') %></h3>
+    <%= render 'layouts/carousel' %>
+  </div>
+</div>
 
 
 
