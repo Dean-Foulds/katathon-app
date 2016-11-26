@@ -8,15 +8,21 @@ img {
   margin: 0 auto;
   }
 
+.p-text {
+  color: #313193;
+  font-size: 20px;
+}
+
 
 .padding {
   padding-top: 10px;
   padding-right: 10px;
 }
 
-// THESE ARE EXAMPLES YOU CAN MODIFY
-// create your own classes
-// to make views framework-neutral
+.padding-lrg {
+  padding-top: 80px;
+}
+
 .column {
   @extend .col-md-6;
   @extend .text-center;
@@ -38,7 +44,7 @@ img {
 main {
   @extend .container;
   background-color: #eee;
-  color: #313193 ;
+  color: #313193;
   padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
