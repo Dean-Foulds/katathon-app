@@ -1,6 +1,8 @@
 <%# add navigation links to this file %>
-
-<body class="body" data-spy="scroll" data-target=".navbar" data-offset="80">
-<li><%= link_to 'About', href="#about", class: "text-color" %></li>
-</body>
-
+<% if current_user %>
+  <body class="body" data-spy="scroll" data-target=".navbar" data-offset="80">
+  <li><%= link_to 'About', about_path, class: "text-color" %></li>
+  <li><%= link_to 'Gallery', gallery_path, class: "text-color" %></li>
+  </body>
+<% else %>
+<% end %>
